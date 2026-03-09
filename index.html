@@ -1,11 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Mad Weasel Games</title>
+<meta charset="UTF-8">
+<title>Mad Weasel Games</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#000;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px 80px 20px;
+}
+
+.logo{
+    text-align:center;
+    margin-top:40px;
+    margin-bottom:80px;
+}
+
+.logo img{
+    width:260px;
+}
+
+.games{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:40px;
+}
+
+.game-card{
+    background:#111;
+    border-radius:16px;
+    overflow:hidden;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.game-card img{
+    width:100%;
+    display:block;
+}
+
+.game-info{
+    padding:20px;
+    text-align:center;
+}
+
+.game-info h2{
+    margin-top:0;
+    margin-bottom:12px;
+}
+
+.store-button{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 18px;
+    background:#1e88e5;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.store-button:hover{
+    background:#42a5f5;
+}
+
+.footer{
+    text-align:center;
+    margin-top:80px;
+    font-size:14px;
+    color:#777;
+}
+
+</style>
 </head>
+
 <body>
-  <h1>Mad Weasel Games</h1>
-  <p>Indie games with big attitude.</p>
+
+<div class="container">
+
+<div class="logo">
+<img src="logo.png" alt="Mad Weasel Games">
+</div>
+
+<div class="games">
+
+<!-- Mud Rush -->
+<div class="game-card">
+<img src="mudrush.jpg">
+<div class="game-info">
+<h2>Mud Rush</h2>
+<a class="store-button" href="PLAY_STORE_LINK">
+Play on Google Play
+</a>
+</div>
+</div>
+
+<!-- Feed The Cat -->
+<div class="game-card">
+<img src="feedthecat.jpg">
+<div class="game-info">
+<h2>Feed The Cat</h2>
+<a class="store-button" href="#">
+View Game
+</a>
+</div>
+</div>
+
+<!-- Mike-Mike Dogfight -->
+<div class="game-card">
+<img src="mikemike.jpg">
+<div class="game-info">
+<h2>Mike-Mike Dogfight</h2>
+<a class="store-button" href="#">
+View Game
+</a>
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+© Mad Weasel Games
+</div>
+
+</div>
+
 </body>
 </html>
