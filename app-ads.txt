@@ -1,1 +1,5 @@
+# Mad Weasel Games
+# app-ads.txt for Mud Rush
+# https://www.madweaselgames.com
+
 google.com, pub-5895934801358571, DIRECT, f08c47fec0942fa0
